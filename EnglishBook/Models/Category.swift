@@ -14,16 +14,6 @@ struct Category {
     let image: String
     var words: [Word]?
     
-    //MARK: - Private functions
-    private mutating func fillWordsArrayByCategory() {
-        for word in DataManager.dataManager.words {
-            if word.category == name {
-                let wordForAppend = Word(wordAndTranslte: word.word, image: word.image)
-                self.words?.append(wordForAppend)
-            }
-        }
-    }
-    
     //MARK: - Public functions
     static func getAllCategories() -> [Category] {
         var categoriesList: [Category] = []
@@ -31,5 +21,14 @@ struct Category {
             categoriesList.append(Category(name: category.category, image: category.image, words: nil))
         }
         return categoriesList
+    }
+    
+    mutating func fillWordsArrayByCategory() {
+        for word in DataManager.dataManager.words {
+            if word.category == name {
+                let wordForAppend = Word(wordAndTranslte: word.word, image: word.image)
+                self.words?.append(wordForAppend)
+            }
+        }
     }
 }
