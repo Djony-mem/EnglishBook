@@ -13,6 +13,10 @@
 		FA933F5526B52AE70073403E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA933F5326B52AE70073403E /* Main.storyboard */; };
 		FA933F5726B52AE80073403E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA933F5626B52AE80073403E /* Assets.xcassets */; };
 		FA933F5A26B52AE80073403E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA933F5826B52AE80073403E /* LaunchScreen.storyboard */; };
+		FA933F6326B538550073403E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F6226B538550073403E /* Category.swift */; };
+		FA933F6526B538D70073403E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F6426B538D70073403E /* Word.swift */; };
+		FA933F6726B53A050073403E /* LearningType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F6626B53A050073403E /* LearningType.swift */; };
+		FA933F6B26B53BCA0073403E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F6A26B53BCA0073403E /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		FA933F5626B52AE80073403E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA933F5926B52AE80073403E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA933F5B26B52AE80073403E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA933F6226B538550073403E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		FA933F6426B538D70073403E /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		FA933F6626B53A050073403E /* LearningType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningType.swift; sourceTree = "<group>"; };
+		FA933F6A26B53BCA0073403E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		FA933F4C26B52AE70073403E /* EnglishBook */ = {
 			isa = PBXGroup;
 			children = (
+				FA933F6926B53BB00073403E /* Controllers */,
+				FA933F6826B53B870073403E /* Views */,
+				FA933F6126B538420073403E /* Models */,
 				FA933F4D26B52AE70073403E /* AppDelegate.swift */,
 				FA933F4F26B52AE70073403E /* SceneDelegate.swift */,
-				FA933F5126B52AE70073403E /* ViewController.swift */,
-				FA933F5326B52AE70073403E /* Main.storyboard */,
 				FA933F5626B52AE80073403E /* Assets.xcassets */,
-				FA933F5826B52AE80073403E /* LaunchScreen.storyboard */,
 				FA933F5B26B52AE80073403E /* Info.plist */,
+				FA933F6A26B53BCA0073403E /* DataManager.swift */,
 			);
 			path = EnglishBook;
+			sourceTree = "<group>";
+		};
+		FA933F6126B538420073403E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA933F6226B538550073403E /* Category.swift */,
+				FA933F6426B538D70073403E /* Word.swift */,
+				FA933F6626B53A050073403E /* LearningType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA933F6826B53B870073403E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA933F5326B52AE70073403E /* Main.storyboard */,
+				FA933F5826B52AE80073403E /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA933F6926B53BB00073403E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA933F5126B52AE70073403E /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA933F5226B52AE70073403E /* ViewController.swift in Sources */,
+				FA933F6726B53A050073403E /* LearningType.swift in Sources */,
 				FA933F4E26B52AE70073403E /* AppDelegate.swift in Sources */,
+				FA933F6B26B53BCA0073403E /* DataManager.swift in Sources */,
+				FA933F6526B538D70073403E /* Word.swift in Sources */,
 				FA933F5026B52AE70073403E /* SceneDelegate.swift in Sources */,
+				FA933F6326B538550073403E /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
