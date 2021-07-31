@@ -8,14 +8,15 @@
 struct Word {
     
     //MARK: - Pivate properties
-    private let wordAndTranslte: [String : String]
-    private let image: String
+    let wordAndTranslte: [String : String]
+    let image: String
+    let transcription: String
     
     //MARK: - Public functions
     static func getAllWords() -> [Word] {
         var words: [Word] = []
         for word in DataManager.dataManager.words {
-            let wordForAppend = Word(wordAndTranslte: word.word, image: word.image)
+            let wordForAppend = Word(wordAndTranslte: word.word, image: word.image, transcription: word.transcription)
             words.append(wordForAppend)
         }
         return words

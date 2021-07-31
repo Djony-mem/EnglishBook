@@ -26,7 +26,7 @@ struct Category {
     mutating func fillWordsArrayByCategory() {
         for word in DataManager.dataManager.words {
             if word.category == name {
-                let wordForAppend = Word(wordAndTranslte: word.word, image: word.image)
+                let wordForAppend = Word(wordAndTranslte: word.word, image: word.image, transcription: word.transcription)
                 self.words?.append(wordForAppend)
             }
         }
