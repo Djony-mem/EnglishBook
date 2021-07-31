@@ -7,8 +7,11 @@
 
 import Foundation
 
-enum LearningType {
-    case dictionary, chooseTranslate, listening, collectWordFromLetters
+enum LearningType : String {
+    case dictionary = "Словарь"
+    case chooseTranslate = "Выберите перевод"
+    case listening = "Прослушайте и выберите перевод"
+    case collectWordFromLetters = "Соберите слово из букв"
     var image: String {
         switch self {
         case .dictionary:
@@ -19,18 +22,6 @@ enum LearningType {
             return "🎼"
         case .collectWordFromLetters:
             return "␂"
-        }
-    }
-    var description: String {
-        switch self {
-        case .dictionary:
-            return "Словарь"
-        case .chooseTranslate:
-            return "Выберите перевод"
-        case .listening:
-            return "Прослушайте и выберите перевод"
-        case .collectWordFromLetters:
-            return "Соберите слово из букв"
         }
     }
 }
