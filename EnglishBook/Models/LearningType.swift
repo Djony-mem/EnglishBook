@@ -21,7 +21,7 @@ enum LearningType : String {
         case .listening:
             return "🎼"
         case .collectWordFromLetters:
-            return "␂"
+            return "📝"
         }
     }
 }

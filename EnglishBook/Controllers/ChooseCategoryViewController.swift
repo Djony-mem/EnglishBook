@@ -13,6 +13,9 @@ class ChooseCategoryViewController: UIViewController {
     @IBOutlet weak var doTestButton: UIButton!
     @IBOutlet weak var categoryButtons: UIButton!
     
+    var category: Category!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,11 +32,8 @@ class ChooseCategoryViewController: UIViewController {
     
     @IBAction func chosenAnimals(_ sender: UIButton) {
     }
-    
-    @IBAction func chosenFood(_ sender: UIButton) {
-    }
-    
-    @IBAction func chosenFamily(_ sender: UIButton) {
+
+    @IBAction func chosenJob(_ sender: UIButton) {
     }
     
     @IBAction func chosenSports(_ sender: UIButton) {
@@ -42,14 +42,12 @@ class ChooseCategoryViewController: UIViewController {
     @IBAction func chosenHobbies(_ sender: UIButton) {
     }
     
-    @IBAction func chosenTransportation(_ sender: UIButton) {
-    }
     
     
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let _ = segue.destination as? LearningWayViewController
+        let _ = segue.destination as? LearningTypeViewController
     }
 }
 

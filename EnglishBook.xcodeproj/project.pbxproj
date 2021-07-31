@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		059E5B8826B5941E00F3FE36 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E5B8726B5941E00F3FE36 /* GetStartedViewController.swift */; };
 		059E5B8A26B5944400F3FE36 /* ChooseCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E5B8926B5944400F3FE36 /* ChooseCategoryViewController.swift */; };
-		059E5B8C26B5946100F3FE36 /* LearningWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E5B8B26B5946100F3FE36 /* LearningWayViewController.swift */; };
+		059E5B8C26B5946100F3FE36 /* LearningTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 059E5B8B26B5946100F3FE36 /* LearningTypeViewController.swift */; };
 		FA933F4E26B52AE70073403E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F4D26B52AE70073403E /* AppDelegate.swift */; };
 		FA933F5026B52AE70073403E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F4F26B52AE70073403E /* SceneDelegate.swift */; };
 		FA933F5526B52AE70073403E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA933F5326B52AE70073403E /* Main.storyboard */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		059E5B8726B5941E00F3FE36 /* GetStartedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
 		059E5B8926B5944400F3FE36 /* ChooseCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCategoryViewController.swift; sourceTree = "<group>"; };
-		059E5B8B26B5946100F3FE36 /* LearningWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningWayViewController.swift; sourceTree = "<group>"; };
+		059E5B8B26B5946100F3FE36 /* LearningTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningTypeViewController.swift; sourceTree = "<group>"; };
 		FA933F4A26B52AE70073403E /* EnglishBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA933F4D26B52AE70073403E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA933F4F26B52AE70073403E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			children = (
 				059E5B8726B5941E00F3FE36 /* GetStartedViewController.swift */,
 				059E5B8926B5944400F3FE36 /* ChooseCategoryViewController.swift */,
-				059E5B8B26B5946100F3FE36 /* LearningWayViewController.swift */,
+				059E5B8B26B5946100F3FE36 /* LearningTypeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -180,7 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA933F6726B53A050073403E /* LearningType.swift in Sources */,
-				059E5B8C26B5946100F3FE36 /* LearningWayViewController.swift in Sources */,
+				059E5B8C26B5946100F3FE36 /* LearningTypeViewController.swift in Sources */,
 				FA933F4E26B52AE70073403E /* AppDelegate.swift in Sources */,
 				FA933F6B26B53BCA0073403E /* DataManager.swift in Sources */,
 				FA933F6526B538D70073403E /* Word.swift in Sources */,
