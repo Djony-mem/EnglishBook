@@ -10,6 +10,7 @@ import UIKit
 class CollectFromLettersViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var rusWordLabel: UILabel!
     @IBOutlet weak var emojiLabel: UILabel!
     @IBOutlet weak var correctAnswerLabel: UILabel!
     
@@ -18,13 +19,14 @@ class CollectFromLettersViewController: UIViewController {
     @IBOutlet weak var buttonsStackViewSecond: UIStackView!
     
     // MARK: - Public Properties
-    
-    // Временный переменные
-    let category = "Хобби"
-    let engWord = "Reading of books"
-    let emoji = "📚"
+    var words = Word.getAllWords()
     
     // MARK: - Private Properties
+    private var category = "Хобби"
+    private var engWord = "Reading of books"
+    private var rusWord = "Чтение книг"
+    private var emoji = "📚"
+    
     private var wordSpelling: [String] = []
     private var currentLetter = 0
     private var wordLabels: [UILabel] = []
@@ -37,6 +39,7 @@ class CollectFromLettersViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func nextWordButtonTapped() {
+
         let uppercasedWord = engWord.uppercased()
         wordSpelling = uppercasedWord.map {String($0)}
         for label in labelsStackView.arrangedSubviews {
@@ -56,6 +59,7 @@ class CollectFromLettersViewController: UIViewController {
         currentLetter = 0
         wordLabels = []
         categoryLabel.text = category
+        rusWordLabel.text = rusWord
         emojiLabel.text = emoji
         createLabels(numberOfLabels: wordSpelling.count)
         createButtons(numberOfButtons: wordSpelling.count)
