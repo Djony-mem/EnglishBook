@@ -127,7 +127,8 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="🐶"/>
                                                         <connections>
-                                                            <segue destination="5Ev-ri-m4u" kind="show" id="yUv-yw-O38"/>
+                                                            <action selector="chosenAnimals:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="lFc-LA-44p"/>
+                                                            <segue destination="5Ev-ri-m4u" kind="show" id="zQn-9R-fZT"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Животные" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioO-06-62i">
@@ -147,6 +148,7 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="🎸"/>
                                                         <connections>
+                                                            <action selector="chosenHobbies:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="Syr-Li-SuQ"/>
                                                             <segue destination="5Ev-ri-m4u" kind="show" id="ZeJ-uA-rFO"/>
                                                         </connections>
                                                     </button>
@@ -193,6 +195,7 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="⚽️"/>
                                                         <connections>
+                                                            <action selector="chosenSports:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="SoU-R6-g6o"/>
                                                             <segue destination="5Ev-ri-m4u" kind="show" id="rjF-dL-5RG"/>
                                                         </connections>
                                                     </button>
@@ -228,7 +231,6 @@
                         <outlet property="doTestButton" destination="U3B-X9-mRC" id="F7M-sm-X3f"/>
                         <outlet property="hobbyButton" destination="9H7-2j-w5f" id="mka-OF-wbU"/>
                         <outlet property="jobButton" destination="S2e-YK-nYs" id="hPh-od-HJA"/>
-                        <outlet property="labellabel" destination="ces-aN-Ldl" id="Wu5-gH-xr4"/>
                         <outlet property="sportButton" destination="OMA-6j-Ekg" id="20B-A4-Sjp"/>
                     </connections>
                 </viewController>
@@ -348,9 +350,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2p2-tG-gfe"/>
-                    <connections>
-                        <outlet property="label" destination="mBb-Cd-oVD" id="74b-WY-zRZ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58D-hP-aOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -358,7 +357,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yUv-yw-O38"/>
+        <segue reference="ZeJ-uA-rFO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="drop" width="704" height="912"/>

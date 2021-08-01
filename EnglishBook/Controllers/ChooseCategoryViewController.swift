@@ -17,10 +17,7 @@ class ChooseCategoryViewController: UIViewController {
     @IBOutlet weak var hobbyButton: UIButton!
     @IBOutlet weak var sportButton: UIButton!
     
-    
-    private var datamanager = DataManager.dataManager
     var categories = [Category]()
-    var words = [Word]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,31 +34,23 @@ class ChooseCategoryViewController: UIViewController {
     
     @IBAction func chosenAnimals(_ sender: UIButton) {
         var animalsCategory = Category(name: "Животные", image: "🐶")
-        let animalWord: () = animalsCategory.fillWordsArrayByCategory()
-        var animalsArray: [Any] = []
-        animalsArray.append(animalWord)
+        animalsCategory.fillWordsArrayByCategory()
         
     }
 
     @IBAction func chosenJob(_ sender: UIButton) {
         var jobsCategory = Category(name: "Профессии", image: "👨‍💻")
-        let jobsWord: () = jobsCategory.fillWordsArrayByCategory()
-        var jobsArray: [Any] = []
-        jobsArray.append(jobsWord)
+        jobsCategory.fillWordsArrayByCategory()
     }
 
     @IBAction func chosenSports(_ sender: UIButton) {
         var sportCategory = Category(name: "Спорт", image: "⚽️")
-        let sportWord:  () = sportCategory.fillWordsArrayByCategory()
-        var sportArray: [Any] = []
-        sportArray.append(sportWord)
+        sportCategory.fillWordsArrayByCategory()
     }
 
     @IBAction func chosenHobbies(_ sender: UIButton) {
         var hobbiesCategory = Category(name: "Хобби", image: "🎸")
-        let hobbiesWord: () = hobbiesCategory.fillWordsArrayByCategory()
-        var hobbiesArray: [Any] = []
-        hobbiesArray.append(hobbiesWord)
+        hobbiesCategory.fillWordsArrayByCategory()
     }
     
 
