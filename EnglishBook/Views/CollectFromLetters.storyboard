@@ -11,17 +11,74 @@
         <!--Collect From Letters View Controller-->
         <scene sceneID="6w8-Nv-FGT">
             <objects>
-                <viewController id="EwH-Hl-WNA" customClass="CollectFromLettersViewController" customModule="EnglishBook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="collectFromLettersStoryboard" id="EwH-Hl-WNA" customClass="CollectFromLettersViewController" customModule="EnglishBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zeh-OK-S1e">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FN-kU-NPh">
+                                <rect key="frame" x="125" y="20" width="70" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYY-Af-Wy7">
+                                <rect key="frame" x="125" y="518" width="70" height="30"/>
+                                <state key="normal" title="Next word"/>
+                                <connections>
+                                    <action selector="nextWordButtonTapped" destination="EwH-Hl-WNA" eventType="touchUpInside" id="ocb-Y5-oth"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-lV-SRq" userLabel="Orientation Stack View">
+                                <rect key="frame" x="106" y="164.5" width="108" height="239.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🚂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXG-Ug-kkw">
+                                        <rect key="frame" x="0.0" y="0.0" width="108" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vjy-8d-N5h">
+                                        <rect key="frame" x="5.5" y="129.5" width="97" height="110"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ka3-0p-yJZ" userLabel="labelsStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="97" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="LI9-Bq-7hB"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-rE-cZq" userLabel="buttonsStackView">
+                                                <rect key="frame" x="0.0" y="60" width="97" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="U4G-kP-g30"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JEi-Qc-WuU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JEi-Qc-WuU" firstAttribute="bottom" secondItem="BYY-Af-Wy7" secondAttribute="bottom" constant="20" id="Iau-X7-ZLJ"/>
+                            <constraint firstItem="1FN-kU-NPh" firstAttribute="centerX" secondItem="JEi-Qc-WuU" secondAttribute="centerX" id="U1d-X0-hfk"/>
+                            <constraint firstItem="tKA-lV-SRq" firstAttribute="centerX" secondItem="JEi-Qc-WuU" secondAttribute="centerX" id="VWk-1O-Dvm"/>
+                            <constraint firstItem="tKA-lV-SRq" firstAttribute="centerY" secondItem="JEi-Qc-WuU" secondAttribute="centerY" id="gOP-Qq-8n6"/>
+                            <constraint firstItem="1FN-kU-NPh" firstAttribute="top" secondItem="JEi-Qc-WuU" secondAttribute="top" constant="20" id="mom-Ja-X9L"/>
+                            <constraint firstItem="BYY-Af-Wy7" firstAttribute="centerX" secondItem="JEi-Qc-WuU" secondAttribute="centerX" id="otx-2d-o0g"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonsStackView" destination="ASE-rE-cZq" id="y23-Xp-Hyh"/>
+                        <outlet property="categoryLabel" destination="1FN-kU-NPh" id="gVd-hI-D1I"/>
+                        <outlet property="emojiLabel" destination="pXG-Ug-kkw" id="V75-C0-4Lh"/>
+                        <outlet property="labelsStackView" destination="ka3-0p-yJZ" id="yrD-iu-vaD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0M2-Uq-k79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5775" y="-1620"/>
+            <point key="canvasLocation" x="-5421" y="-1217"/>
         </scene>
     </scenes>
     <resources>
