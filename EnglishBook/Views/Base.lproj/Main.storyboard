@@ -29,7 +29,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Arc-mP-A3Y" kind="presentation" modalPresentationStyle="fullScreen" id="PSp-CD-H5X"/>
+                                    <segue destination="Arc-mP-A3Y" kind="presentation" modalPresentationStyle="fullScreen" id="bKQ-iD-1qr"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drop" translatesAutoresizingMaskIntoConstraints="NO" id="zeb-Fi-Bfm">
@@ -127,8 +127,7 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="🐶"/>
                                                         <connections>
-                                                            <action selector="chosenAnimals:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="q0q-uQ-wCM"/>
-                                                            <segue destination="5Ev-ri-m4u" kind="show" id="MAb-e6-ncl"/>
+                                                            <segue destination="5Ev-ri-m4u" kind="show" id="yUv-yw-O38"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Животные" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioO-06-62i">
@@ -148,8 +147,7 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="🎸"/>
                                                         <connections>
-                                                            <action selector="chosenHobbies:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="xU1-o5-Tbp"/>
-                                                            <segue destination="5Ev-ri-m4u" kind="show" id="Aa6-KR-lEG"/>
+                                                            <segue destination="5Ev-ri-m4u" kind="show" id="ZeJ-uA-rFO"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Хобби" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ha-Pv-fuf">
@@ -174,9 +172,8 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="👨‍💻"/>
                                                         <connections>
-                                                            <action selector="chosenFood:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="PHI-Ag-XBe"/>
-                                                            <action selector="chosenJob:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="HYQ-u0-pdK"/>
-                                                            <segue destination="5Ev-ri-m4u" kind="show" id="CE6-KP-Mm5"/>
+                                                            <action selector="chosenJob:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="DjL-uJ-rmR"/>
+                                                            <segue destination="5Ev-ri-m4u" kind="show" id="0vD-g0-HgG"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Профессия" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqW-AG-Kya">
@@ -196,8 +193,7 @@
                                                         <color key="tintColor" red="0.72127671790000003" green="0.69270526349999995" blue="0.98434048890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <state key="normal" title="⚽️"/>
                                                         <connections>
-                                                            <action selector="chosenSports:" destination="Arc-mP-A3Y" eventType="touchUpInside" id="u1X-no-HLM"/>
-                                                            <segue destination="5Ev-ri-m4u" kind="show" id="kCU-BE-tvY"/>
+                                                            <segue destination="5Ev-ri-m4u" kind="show" id="rjF-dL-5RG"/>
                                                         </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Спорт" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEI-pZ-4Xw">
@@ -226,15 +222,19 @@
                             <constraint firstItem="9JQ-Sd-xnz" firstAttribute="trailing" secondItem="Dzi-Pa-ami" secondAttribute="trailing" constant="53" id="zbg-k6-6QY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="C61-hv-eB2"/>
+                    <navigationItem key="navigationItem" id="nD7-qn-X3s"/>
                     <connections>
-                        <outlet property="categoryButtons" destination="OMA-6j-Ekg" id="Elg-mT-ydt"/>
+                        <outlet property="animalsButton" destination="dt6-8R-O3a" id="X9z-yK-K31"/>
                         <outlet property="doTestButton" destination="U3B-X9-mRC" id="F7M-sm-X3f"/>
+                        <outlet property="hobbyButton" destination="9H7-2j-w5f" id="mka-OF-wbU"/>
+                        <outlet property="jobButton" destination="S2e-YK-nYs" id="hPh-od-HJA"/>
+                        <outlet property="labellabel" destination="ces-aN-Ldl" id="Wu5-gH-xr4"/>
+                        <outlet property="sportButton" destination="OMA-6j-Ekg" id="20B-A4-Sjp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NLM-a2-AuB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1102.8985507246377" y="41.517857142857139"/>
+            <point key="canvasLocation" x="1122" y="42"/>
         </scene>
         <!--Learning Type View Controller-->
         <scene sceneID="PaI-m6-Qdl">
@@ -244,8 +244,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="h8W-et-vYS">
-                                <rect key="frame" x="17" y="20" width="377" height="778"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="53" translatesAutoresizingMaskIntoConstraints="NO" id="h8W-et-vYS">
+                                <rect key="frame" x="18.5" y="32" width="377" height="778"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hg9-jP-2yz">
                                         <rect key="frame" x="88.5" y="0.0" width="200" height="157"/>
@@ -342,19 +342,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W9D-L1-vj2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="h8W-et-vYS" firstAttribute="centerY" secondItem="g3d-uX-5eM" secondAttribute="centerY" id="R4g-BW-Y02"/>
+                            <constraint firstItem="h8W-et-vYS" firstAttribute="centerX" secondItem="g3d-uX-5eM" secondAttribute="centerX" id="j9S-th-CoP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2p2-tG-gfe"/>
                     <connections>
-                        <outlet property="checkYourself" destination="iHz-ra-BCq" id="6pW-jg-Jx5"/>
-                        <outlet property="chooseTranslationButton" destination="fgn-qg-OUm" id="sYb-Za-8un"/>
-                        <outlet property="chooseTranslationLabel" destination="fgn-qg-OUm" id="KNs-tb-6kF"/>
-                        <outlet property="dictionaryButton" destination="fLr-ga-hHP" id="R8u-Qz-3PT"/>
-                        <outlet property="dictionaryLabel" destination="mBb-Cd-oVD" id="4Uv-zO-XLo"/>
-                        <outlet property="fillInTheBlanksButton" destination="fgn-qg-OUm" id="VcC-4h-4UQ"/>
-                        <outlet property="listenButton" destination="iHz-ra-BCq" id="cJS-br-vxI"/>
-                        <outlet property="listenLabel" destination="jV9-GF-bco" id="DoT-LZ-sgH"/>
-                        <outlet property="makeWordButton" destination="t3g-U3-nJo" id="Vvf-5X-nCi"/>
-                        <outlet property="makeWordLabel" destination="t3g-U3-nJo" id="wFj-v8-liT"/>
+                        <outlet property="label" destination="mBb-Cd-oVD" id="74b-WY-zRZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58D-hP-aOm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -363,7 +358,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Aa6-KR-lEG"/>
+        <segue reference="yUv-yw-O38"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="drop" width="704" height="912"/>

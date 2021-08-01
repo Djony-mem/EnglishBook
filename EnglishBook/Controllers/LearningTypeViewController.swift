@@ -28,7 +28,6 @@ class LearningTypeViewController: UIViewController {
     }
     @IBAction func listenIsChosen(_ sender:UIButton) {
     }
-    
     @IBAction func makeWordIsChosen(_ sender: UIButton) {
     }
     

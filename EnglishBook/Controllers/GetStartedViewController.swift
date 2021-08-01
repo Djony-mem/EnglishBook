@@ -13,7 +13,6 @@ class GetStartedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
         getStartedButton.layer.cornerRadius = 20
         
     }
