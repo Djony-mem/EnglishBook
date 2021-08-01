@@ -23,33 +23,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYY-Af-Wy7">
-                                <rect key="frame" x="125" y="518" width="70" height="30"/>
-                                <state key="normal" title="Next word"/>
+                                <rect key="frame" x="94" y="518" width="132" height="30"/>
+                                <state key="normal" title="Следующее слово"/>
                                 <connections>
                                     <action selector="nextWordButtonTapped" destination="EwH-Hl-WNA" eventType="touchUpInside" id="ocb-Y5-oth"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tKA-lV-SRq" userLabel="Orientation Stack View">
-                                <rect key="frame" x="20" y="109" width="280" height="350"/>
+                                <rect key="frame" x="20" y="49" width="280" height="470"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🚂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXG-Ug-kkw">
-                                        <rect key="frame" x="86" y="0.0" width="108" height="170"/>
+                                        <rect key="frame" x="86" y="0.0" width="108" height="230"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="100"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vjy-8d-N5h">
-                                        <rect key="frame" x="115" y="180" width="50" height="170"/>
+                                        <rect key="frame" x="40" y="240" width="200" height="230"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ka3-0p-yJZ" userLabel="labelsStackView">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ka3-0p-yJZ" userLabel="labelsStackView">
+                                                <rect key="frame" x="75" y="0.0" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="LI9-Bq-7hB"/>
                                                 </constraints>
                                             </stackView>
-                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правильный ответ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfF-FN-1G9">
-                                                <rect key="frame" x="-48.5" y="55" width="147" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfF-FN-1G9">
+                                                <rect key="frame" x="0.0" y="60" width="200" height="50"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="0AX-JZ-05y"/>
                                                     <constraint firstAttribute="height" constant="50" id="1t2-So-DKH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -57,13 +58,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ASE-rE-cZq" userLabel="buttonsStackViewFirst">
-                                                <rect key="frame" x="0.0" y="60" width="50" height="50"/>
+                                                <rect key="frame" x="75" y="120" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="U4G-kP-g30"/>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-s5-r3A" userLabel="buttonsStackViewSecond">
-                                                <rect key="frame" x="0.0" y="120" width="50" height="50"/>
+                                                <rect key="frame" x="75" y="180" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="0aL-R5-biV"/>
                                                 </constraints>
@@ -97,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0M2-Uq-k79" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5422.5" y="-1217.9577464788733"/>
+            <point key="canvasLocation" x="-5494" y="-1235"/>
         </scene>
     </scenes>
     <resources>

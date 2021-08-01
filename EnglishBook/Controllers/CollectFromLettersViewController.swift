@@ -52,6 +52,7 @@ class CollectFromLettersViewController: UIViewController {
             button.removeFromSuperview()
         }
         correctAnswerLabel.isHidden = true
+        buttonsStackViewFirst.isHidden = false
         currentLetter = 0
         wordLabels = []
         categoryLabel.text = category
@@ -64,6 +65,13 @@ class CollectFromLettersViewController: UIViewController {
     private func createLabels(numberOfLabels: Int) {
         for currentLabel in 0..<numberOfLabels {
             let label = UILabel()
+            label.addConstraint(NSLayoutConstraint(item: label,
+                                                   attribute: .width,
+                                                   relatedBy: .equal,
+                                                   toItem: nil,
+                                                   attribute: .notAnAttribute,
+                                                   multiplier: 1,
+                                                   constant: 12))
             if wordSpelling[currentLabel] == " " {
                 label.text = " "
             } else {
@@ -112,6 +120,7 @@ class CollectFromLettersViewController: UIViewController {
             if wordLabels[index].text != wordSpelling[index] {
                 for wordLabel in wordLabels {
                     wordLabel.textColor = .red
+                    buttonsStackViewFirst.isHidden = true
                     correctAnswerLabel.isHidden = false
                     correctAnswerLabel.text = "Правильный ответ:\n\(engWord.uppercased())"
                 }
@@ -119,6 +128,7 @@ class CollectFromLettersViewController: UIViewController {
             }
             for wordLabel in wordLabels {
                 wordLabel.textColor = .green
+                buttonsStackViewFirst.isHidden = true
                 correctAnswerLabel.isHidden = false
                 correctAnswerLabel.text = "Верно!"
             }
