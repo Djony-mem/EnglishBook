@@ -22,8 +22,8 @@ class CollectFromLettersViewController: UIViewController {
     var words = Word.getAllWords()
     
     // MARK: - Private Properties
-    private var category = "Хобби"
-    private var engWord = "Reading of books"
+    private var category = ""
+    private var engWord = "Reading of mooks"
     private var rusWord = "Чтение книг"
     private var emoji = "📚"
     
@@ -39,7 +39,15 @@ class CollectFromLettersViewController: UIViewController {
     
     // MARK: - IBActions
     @IBAction func nextWordButtonTapped() {
-
+        guard let randomWord = words.randomElement() else { return }
+        emoji = randomWord.image
+        for key in randomWord.wordAndTranslte.keys {
+            rusWord = key
+        }
+        for value in randomWord.wordAndTranslte.values {
+            engWord = value
+        }
+        
         let uppercasedWord = engWord.uppercased()
         wordSpelling = uppercasedWord.map {String($0)}
         for label in labelsStackView.arrangedSubviews {
@@ -69,13 +77,14 @@ class CollectFromLettersViewController: UIViewController {
     private func createLabels(numberOfLabels: Int) {
         for currentLabel in 0..<numberOfLabels {
             let label = UILabel()
+            label.textAlignment = .center
             label.addConstraint(NSLayoutConstraint(item: label,
                                                    attribute: .width,
                                                    relatedBy: .equal,
                                                    toItem: nil,
                                                    attribute: .notAnAttribute,
                                                    multiplier: 1,
-                                                   constant: 12))
+                                                   constant: 15))
             if wordSpelling[currentLabel] == " " {
                 label.text = " "
             } else {
