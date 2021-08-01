@@ -8,6 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		D461189A26B5B75100D2EF81 /* ListenAndAnswerVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D461189926B5B75100D2EF81 /* ListenAndAnswerVC.storyboard */; };
+		D4BF9EFE26B73F5F00C60E7E /* Volleyball.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9EF926B73F5E00C60E7E /* Volleyball.m4a */; };
+		D4BF9EFF26B73F5F00C60E7E /* Swimming.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9EFA26B73F5E00C60E7E /* Swimming.m4a */; };
+		D4BF9F0026B73F5F00C60E7E /* Boxing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9EFB26B73F5E00C60E7E /* Boxing.m4a */; };
+		D4BF9F0126B73F5F00C60E7E /* Basketball.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9EFC26B73F5F00C60E7E /* Basketball.m4a */; };
+		D4BF9F0226B73F5F00C60E7E /* Table tennis.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9EFD26B73F5F00C60E7E /* Table tennis.m4a */; };
+		D4BF9F0926B7493B00C60E7E /* Builder.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0326B7493B00C60E7E /* Builder.m4a */; };
+		D4BF9F0A26B7493B00C60E7E /* Policeman.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0426B7493B00C60E7E /* Policeman.m4a */; };
+		D4BF9F0B26B7493B00C60E7E /* Doctor.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0526B7493B00C60E7E /* Doctor.m4a */; };
+		D4BF9F0C26B7493B00C60E7E /* Programmer.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0626B7493B00C60E7E /* Programmer.m4a */; };
+		D4BF9F0D26B7493B00C60E7E /* Santa.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0726B7493B00C60E7E /* Santa.m4a */; };
+		D4BF9F0E26B7493B00C60E7E /* Cook.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0826B7493B00C60E7E /* Cook.m4a */; };
+		D4BF9F1526B74A3100C60E7E /* Bear.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F0F26B74A3100C60E7E /* Bear.m4a */; };
+		D4BF9F1626B74A3100C60E7E /* Mouse.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1026B74A3100C60E7E /* Mouse.m4a */; };
+		D4BF9F1726B74A3100C60E7E /* Rabbit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1126B74A3100C60E7E /* Rabbit.m4a */; };
+		D4BF9F1826B74A3100C60E7E /* Dog.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1226B74A3100C60E7E /* Dog.m4a */; };
+		D4BF9F1926B74A3100C60E7E /* Fox.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1326B74A3100C60E7E /* Fox.m4a */; };
+		D4BF9F1A26B74A3100C60E7E /* Cat.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1426B74A3100C60E7E /* Cat.m4a */; };
+		D4BF9F1E26B74A8A00C60E7E /* Football.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1D26B74A8A00C60E7E /* Football.m4a */; };
+		D4BF9F2526B74DAC00C60E7E /* Reading of books.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F1F26B74DAC00C60E7E /* Reading of books.m4a */; };
+		D4BF9F2626B74DAC00C60E7E /* Singing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F2026B74DAC00C60E7E /* Singing.m4a */; };
+		D4BF9F2726B74DAC00C60E7E /* Playing guitar.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F2126B74DAC00C60E7E /* Playing guitar.m4a */; };
+		D4BF9F2826B74DAC00C60E7E /* Listen to music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F2226B74DAC00C60E7E /* Listen to music.m4a */; };
+		D4BF9F2926B74DAC00C60E7E /* Drawing.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F2326B74DAC00C60E7E /* Drawing.m4a */; };
+		D4BF9F2A26B74DAC00C60E7E /* Bicycle riding.m4a in Resources */ = {isa = PBXBuildFile; fileRef = D4BF9F2426B74DAC00C60E7E /* Bicycle riding.m4a */; };
+		D4CC379B26B708EF00EDBE8A /* ListenAndAnswerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CC379A26B708EF00EDBE8A /* ListenAndAnswerViewController.swift */; };
 		FA933F4E26B52AE70073403E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F4D26B52AE70073403E /* AppDelegate.swift */; };
 		FA933F5026B52AE70073403E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F4F26B52AE70073403E /* SceneDelegate.swift */; };
 		FA933F5226B52AE70073403E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA933F5126B52AE70073403E /* ViewController.swift */; };
@@ -22,6 +47,31 @@
 
 /* Begin PBXFileReference section */
 		D461189926B5B75100D2EF81 /* ListenAndAnswerVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ListenAndAnswerVC.storyboard; sourceTree = "<group>"; };
+		D4BF9EF926B73F5E00C60E7E /* Volleyball.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Volleyball.m4a; path = ../../../sounds/Volleyball.m4a; sourceTree = "<group>"; };
+		D4BF9EFA26B73F5E00C60E7E /* Swimming.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Swimming.m4a; path = ../../../sounds/Swimming.m4a; sourceTree = "<group>"; };
+		D4BF9EFB26B73F5E00C60E7E /* Boxing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Boxing.m4a; path = ../../../sounds/Boxing.m4a; sourceTree = "<group>"; };
+		D4BF9EFC26B73F5F00C60E7E /* Basketball.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Basketball.m4a; path = ../../../sounds/Basketball.m4a; sourceTree = "<group>"; };
+		D4BF9EFD26B73F5F00C60E7E /* Table tennis.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Table tennis.m4a"; path = "../../../sounds/Table tennis.m4a"; sourceTree = "<group>"; };
+		D4BF9F0326B7493B00C60E7E /* Builder.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Builder.m4a; path = ../../../sounds/Builder.m4a; sourceTree = "<group>"; };
+		D4BF9F0426B7493B00C60E7E /* Policeman.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Policeman.m4a; path = ../../../sounds/Policeman.m4a; sourceTree = "<group>"; };
+		D4BF9F0526B7493B00C60E7E /* Doctor.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Doctor.m4a; path = ../../../sounds/Doctor.m4a; sourceTree = "<group>"; };
+		D4BF9F0626B7493B00C60E7E /* Programmer.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Programmer.m4a; path = ../../../sounds/Programmer.m4a; sourceTree = "<group>"; };
+		D4BF9F0726B7493B00C60E7E /* Santa.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Santa.m4a; path = ../../../sounds/Santa.m4a; sourceTree = "<group>"; };
+		D4BF9F0826B7493B00C60E7E /* Cook.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cook.m4a; path = ../../../sounds/Cook.m4a; sourceTree = "<group>"; };
+		D4BF9F0F26B74A3100C60E7E /* Bear.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Bear.m4a; path = ../../../sounds/Bear.m4a; sourceTree = "<group>"; };
+		D4BF9F1026B74A3100C60E7E /* Mouse.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Mouse.m4a; path = ../../../sounds/Mouse.m4a; sourceTree = "<group>"; };
+		D4BF9F1126B74A3100C60E7E /* Rabbit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Rabbit.m4a; path = ../../../sounds/Rabbit.m4a; sourceTree = "<group>"; };
+		D4BF9F1226B74A3100C60E7E /* Dog.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dog.m4a; path = ../../../sounds/Dog.m4a; sourceTree = "<group>"; };
+		D4BF9F1326B74A3100C60E7E /* Fox.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fox.m4a; path = ../../../sounds/Fox.m4a; sourceTree = "<group>"; };
+		D4BF9F1426B74A3100C60E7E /* Cat.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Cat.m4a; path = ../../../sounds/Cat.m4a; sourceTree = "<group>"; };
+		D4BF9F1D26B74A8A00C60E7E /* Football.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Football.m4a; path = ../../../../.Trash/Sounds/Football.m4a; sourceTree = "<group>"; };
+		D4BF9F1F26B74DAC00C60E7E /* Reading of books.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Reading of books.m4a"; path = "../../../sounds/Reading of books.m4a"; sourceTree = "<group>"; };
+		D4BF9F2026B74DAC00C60E7E /* Singing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Singing.m4a; path = ../../../sounds/Singing.m4a; sourceTree = "<group>"; };
+		D4BF9F2126B74DAC00C60E7E /* Playing guitar.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Playing guitar.m4a"; path = "../../../sounds/Playing guitar.m4a"; sourceTree = "<group>"; };
+		D4BF9F2226B74DAC00C60E7E /* Listen to music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Listen to music.m4a"; path = "../../../sounds/Listen to music.m4a"; sourceTree = "<group>"; };
+		D4BF9F2326B74DAC00C60E7E /* Drawing.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = Drawing.m4a; path = ../../../sounds/Drawing.m4a; sourceTree = "<group>"; };
+		D4BF9F2426B74DAC00C60E7E /* Bicycle riding.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bicycle riding.m4a"; path = "../../../sounds/Bicycle riding.m4a"; sourceTree = "<group>"; };
+		D4CC379A26B708EF00EDBE8A /* ListenAndAnswerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenAndAnswerViewController.swift; sourceTree = "<group>"; };
 		FA933F4A26B52AE70073403E /* EnglishBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnglishBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA933F4D26B52AE70073403E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA933F4F26B52AE70073403E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +97,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D4BF9EF626B73F3000C60E7E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D4BF9F2426B74DAC00C60E7E /* Bicycle riding.m4a */,
+				D4BF9F2326B74DAC00C60E7E /* Drawing.m4a */,
+				D4BF9F2226B74DAC00C60E7E /* Listen to music.m4a */,
+				D4BF9F2126B74DAC00C60E7E /* Playing guitar.m4a */,
+				D4BF9F1F26B74DAC00C60E7E /* Reading of books.m4a */,
+				D4BF9F2026B74DAC00C60E7E /* Singing.m4a */,
+				D4BF9F0F26B74A3100C60E7E /* Bear.m4a */,
+				D4BF9F1426B74A3100C60E7E /* Cat.m4a */,
+				D4BF9F1226B74A3100C60E7E /* Dog.m4a */,
+				D4BF9F1326B74A3100C60E7E /* Fox.m4a */,
+				D4BF9F1026B74A3100C60E7E /* Mouse.m4a */,
+				D4BF9F1126B74A3100C60E7E /* Rabbit.m4a */,
+				D4BF9F0326B7493B00C60E7E /* Builder.m4a */,
+				D4BF9F0826B7493B00C60E7E /* Cook.m4a */,
+				D4BF9F0526B7493B00C60E7E /* Doctor.m4a */,
+				D4BF9F0426B7493B00C60E7E /* Policeman.m4a */,
+				D4BF9F0626B7493B00C60E7E /* Programmer.m4a */,
+				D4BF9F0726B7493B00C60E7E /* Santa.m4a */,
+				D4BF9F1D26B74A8A00C60E7E /* Football.m4a */,
+				D4BF9EFC26B73F5F00C60E7E /* Basketball.m4a */,
+				D4BF9EFB26B73F5E00C60E7E /* Boxing.m4a */,
+				D4BF9EFA26B73F5E00C60E7E /* Swimming.m4a */,
+				D4BF9EFD26B73F5F00C60E7E /* Table tennis.m4a */,
+				D4BF9EF926B73F5E00C60E7E /* Volleyball.m4a */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		FA933F4126B52AE70073403E = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +154,7 @@
 				FA933F4F26B52AE70073403E /* SceneDelegate.swift */,
 				FA933F5626B52AE80073403E /* Assets.xcassets */,
 				FA933F5B26B52AE80073403E /* Info.plist */,
+				D4BF9EF626B73F3000C60E7E /* Sounds */,
 				FA933F6A26B53BCA0073403E /* DataManager.swift */,
 			);
 			path = EnglishBook;
@@ -101,6 +183,7 @@
 		FA933F6926B53BB00073403E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D4CC379A26B708EF00EDBE8A /* ListenAndAnswerViewController.swift */,
 				FA933F5126B52AE70073403E /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -163,10 +246,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4BF9F1A26B74A3100C60E7E /* Cat.m4a in Resources */,
+				D4BF9F0926B7493B00C60E7E /* Builder.m4a in Resources */,
+				D4BF9F0B26B7493B00C60E7E /* Doctor.m4a in Resources */,
+				D4BF9F1626B74A3100C60E7E /* Mouse.m4a in Resources */,
+				D4BF9F1526B74A3100C60E7E /* Bear.m4a in Resources */,
 				FA933F5A26B52AE80073403E /* LaunchScreen.storyboard in Resources */,
+				D4BF9EFF26B73F5F00C60E7E /* Swimming.m4a in Resources */,
 				D461189A26B5B75100D2EF81 /* ListenAndAnswerVC.storyboard in Resources */,
+				D4BF9F0226B73F5F00C60E7E /* Table tennis.m4a in Resources */,
+				D4BF9F1926B74A3100C60E7E /* Fox.m4a in Resources */,
+				D4BF9F2926B74DAC00C60E7E /* Drawing.m4a in Resources */,
+				D4BF9F0126B73F5F00C60E7E /* Basketball.m4a in Resources */,
+				D4BF9F1826B74A3100C60E7E /* Dog.m4a in Resources */,
 				FA933F5726B52AE80073403E /* Assets.xcassets in Resources */,
+				D4BF9F2726B74DAC00C60E7E /* Playing guitar.m4a in Resources */,
+				D4BF9F0C26B7493B00C60E7E /* Programmer.m4a in Resources */,
+				D4BF9EFE26B73F5F00C60E7E /* Volleyball.m4a in Resources */,
+				D4BF9F0D26B7493B00C60E7E /* Santa.m4a in Resources */,
+				D4BF9F0026B73F5F00C60E7E /* Boxing.m4a in Resources */,
+				D4BF9F2826B74DAC00C60E7E /* Listen to music.m4a in Resources */,
+				D4BF9F1E26B74A8A00C60E7E /* Football.m4a in Resources */,
+				D4BF9F2626B74DAC00C60E7E /* Singing.m4a in Resources */,
+				D4BF9F1726B74A3100C60E7E /* Rabbit.m4a in Resources */,
+				D4BF9F0A26B7493B00C60E7E /* Policeman.m4a in Resources */,
 				FA933F5526B52AE70073403E /* Main.storyboard in Resources */,
+				D4BF9F2526B74DAC00C60E7E /* Reading of books.m4a in Resources */,
+				D4BF9F2A26B74DAC00C60E7E /* Bicycle riding.m4a in Resources */,
+				D4BF9F0E26B7493B00C60E7E /* Cook.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +291,7 @@
 				FA933F6526B538D70073403E /* Word.swift in Sources */,
 				FA933F5026B52AE70073403E /* SceneDelegate.swift in Sources */,
 				FA933F6326B538550073403E /* Category.swift in Sources */,
+				D4CC379B26B708EF00EDBE8A /* ListenAndAnswerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

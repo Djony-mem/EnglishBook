@@ -5,7 +5,7 @@
 //  Created by Максим Изварин on 31.07.2021.
 //
 
-struct Word {
+struct Word: Equatable {
     
     //MARK: - Pivate properties
     let wordAndTranslte: [String : String]

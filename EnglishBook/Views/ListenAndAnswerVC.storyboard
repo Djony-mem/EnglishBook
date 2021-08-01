@@ -9,112 +9,141 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Listen And Answer View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="ListenAndAnswerViewController" customModule="EnglishBook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vdL-X5-eYV">
-                                <rect key="frame" x="20" y="64" width="374" height="626"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-hr-uVA">
-                                        <rect key="frame" x="0.0" y="0.0" width="179" height="626"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cot-U0-lMs">
-                                                <rect key="frame" x="0.0" y="0.0" width="179" height="305"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Cot-U0-lMs" secondAttribute="height" multiplier="179:305" id="k2U-Vo-94E"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <state key="normal" title="🤔"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONG-XP-WaE">
-                                                <rect key="frame" x="0.0" y="321" width="179" height="305"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="ONG-XP-WaE" secondAttribute="height" multiplier="179:305" id="KeD-8Z-6cC"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <state key="normal" title="🤔"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Exy-EH-mVe">
-                                        <rect key="frame" x="195" y="0.0" width="179" height="626"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-xj-yr6">
-                                                <rect key="frame" x="0.0" y="0.0" width="179" height="305"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="sTP-xj-yr6" secondAttribute="height" multiplier="179:305" id="P3h-E9-ZGL"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <state key="normal" title="🤔"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huo-YM-P0H">
-                                                <rect key="frame" x="0.0" y="321" width="179" height="305"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="Huo-YM-P0H" secondAttribute="height" multiplier="179:305" id="zeg-9s-Iwd"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
-                                                <state key="normal" title="🤔"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                        <integer key="value" value="10"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHy-Sp-jhc">
-                                <rect key="frame" x="40" y="772" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHy-Sp-jhc" userLabel="ListenButton">
+                                <rect key="frame" x="40" y="782" width="50" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="ZcH-v9-rkp"/>
-                                    <constraint firstAttribute="height" constant="50" id="cxV-Gi-KfW"/>
+                                    <constraint firstAttribute="width" constant="50" id="cfs-Dw-68G"/>
+                                    <constraint firstAttribute="height" constant="50" id="xTe-Wf-bIz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <imageReference key="image" image="speaker.wave.3.fill" catalog="system" symbolScale="large"/>
                                 </state>
+                                <connections>
+                                    <action selector="listenSoundAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DSH-og-Q1X"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vdL-X5-eYV">
+                                <rect key="frame" x="20" y="64" width="374" height="638"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="2ux-hr-uVA">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="638"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cot-U0-lMs">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="311"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="🤔"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickAnswerAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c1W-QP-ccj"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ONG-XP-WaE">
+                                                <rect key="frame" x="0.0" y="327" width="179" height="311"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="🤔"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickAnswerAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7zb-ex-AeI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Exy-EH-mVe">
+                                        <rect key="frame" x="195" y="0.0" width="179" height="638"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTP-xj-yr6">
+                                                <rect key="frame" x="0.0" y="0.0" width="179" height="311"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="🤔"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickAnswerAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mEx-FP-7US"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Huo-YM-P0H">
+                                                <rect key="frame" x="0.0" y="327" width="179" height="311"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="🤔"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="clickAnswerAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8eu-bl-lsG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Huo-YM-P0H" firstAttribute="height" secondItem="vdL-X5-eYV" secondAttribute="height" multiplier="0.487461" id="6Ub-UY-4EQ"/>
+                                    <constraint firstItem="Cot-U0-lMs" firstAttribute="height" secondItem="vdL-X5-eYV" secondAttribute="height" multiplier="0.487461" id="CD9-cu-5d3"/>
+                                    <constraint firstItem="sTP-xj-yr6" firstAttribute="width" secondItem="vdL-X5-eYV" secondAttribute="width" multiplier="0.47861" id="VSi-HF-wec"/>
+                                    <constraint firstItem="sTP-xj-yr6" firstAttribute="height" secondItem="vdL-X5-eYV" secondAttribute="height" multiplier="0.487461" id="htC-Kb-qIX"/>
+                                    <constraint firstItem="ONG-XP-WaE" firstAttribute="height" secondItem="vdL-X5-eYV" secondAttribute="height" multiplier="0.487461" id="owQ-PS-nff"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xre-m5-f8i">
+                                <rect key="frame" x="318" y="810" width="66" height="22"/>
+                                <state key="normal" title="Дальше"/>
+                                <connections>
+                                    <action selector="nextWord:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oN0-3S-hUy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <constraints>
-                            <constraint firstItem="vdL-X5-eYV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="42X-hq-QV1"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vdL-X5-eYV" secondAttribute="trailing" constant="20" id="4Yl-FO-nyz"/>
-                            <constraint firstItem="vdL-X5-eYV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="H0B-bT-KTX"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pHy-Sp-jhc" secondAttribute="bottom" constant="40" id="O5u-bj-ftc"/>
-                            <constraint firstItem="pHy-Sp-jhc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="egg-Qo-6Ml"/>
+                            <constraint firstItem="pHy-Sp-jhc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="09u-Ux-dTZ"/>
+                            <constraint firstItem="vdL-X5-eYV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="4vv-YU-Mli"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="pHy-Sp-jhc" secondAttribute="bottom" constant="30" id="D8t-a5-P7B"/>
+                            <constraint firstItem="vdL-X5-eYV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="We6-iM-ua4"/>
+                            <constraint firstItem="pHy-Sp-jhc" firstAttribute="top" secondItem="vdL-X5-eYV" secondAttribute="bottom" constant="80" id="ccN-bC-OW9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Xre-m5-f8i" secondAttribute="trailing" constant="30" id="grg-9T-Xo7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vdL-X5-eYV" secondAttribute="trailing" constant="20" id="jLL-z0-diA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Xre-m5-f8i" secondAttribute="bottom" constant="30" id="swB-sk-gha"/>
+                            <constraint firstItem="Xre-m5-f8i" firstAttribute="top" secondItem="vdL-X5-eYV" secondAttribute="bottom" constant="108" id="yUo-7m-z7P"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zn4-LR-Rxg"/>
+                    <connections>
+                        <outlet property="nextButton" destination="Xre-m5-f8i" id="jlG-PW-pC3"/>
+                        <outletCollection property="answerButtons" destination="Cot-U0-lMs" collectionClass="NSMutableArray" id="dQY-wW-x5J"/>
+                        <outletCollection property="answerButtons" destination="ONG-XP-WaE" collectionClass="NSMutableArray" id="Yhc-Pn-8WI"/>
+                        <outletCollection property="answerButtons" destination="sTP-xj-yr6" collectionClass="NSMutableArray" id="5Of-TS-sY1"/>
+                        <outletCollection property="answerButtons" destination="Huo-YM-P0H" collectionClass="NSMutableArray" id="gXM-vC-c5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="44.927536231884062" y="69.642857142857139"/>
+            <point key="canvasLocation" x="955.07246376811599" y="69.642857142857139"/>
         </scene>
     </scenes>
     <resources>
