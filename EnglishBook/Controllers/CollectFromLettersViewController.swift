@@ -22,8 +22,8 @@ class CollectFromLettersViewController: UIViewController {
     var words = Word.getAllWords()
     
     // MARK: - Private Properties
-    private var category = ""
-    private var engWord = "Reading of mooks"
+    private var category = "Составьте слово из букв"
+    private var engWord = "Reading of books"
     private var rusWord = "Чтение книг"
     private var emoji = "📚"
     
@@ -84,7 +84,7 @@ class CollectFromLettersViewController: UIViewController {
                                                    toItem: nil,
                                                    attribute: .notAnAttribute,
                                                    multiplier: 1,
-                                                   constant: 15))
+                                                   constant: 17))
             if wordSpelling[currentLabel] == " " {
                 label.text = " "
             } else {
@@ -101,6 +101,7 @@ class CollectFromLettersViewController: UIViewController {
         for buttonIndex in 0..<buttonsLabels.count {
             let button = UIButton()
             button.setTitle(buttonsLabels[buttonIndex], for: .normal)
+            button.setTitleColor(.black, for: .normal)
             button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
             if buttonsLabels.count > 6 {
                 if buttonIndex < (buttonsLabels.count / 2) {
